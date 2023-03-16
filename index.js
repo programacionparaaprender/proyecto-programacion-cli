@@ -13,7 +13,7 @@ ficheroOK = filepath => {
     );
 }
 const crearFichero = (nombreFichero, extension) => {
-    const pathFichero = `${process.cwd()}/${nombreFichero}.${extension}`;
+    const pathFichero = `${process.cwd()}/files/${nombreFichero}.${extension}`;
     shelljs.touch(pathFichero);
     return pathFichero;
 }
